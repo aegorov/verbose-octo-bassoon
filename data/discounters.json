@@ -1,0 +1,12 @@
+[
+  {
+    "item_code": "VOUCHER",
+    "type": "EveryCountFree",
+    "rules": { "count": 2 }
+  },
+  {
+    "item_code": "TSHIRT",
+    "type": "NewPriceAfterMetCondition",
+    "rules": { "new_price_cents": 1900, "condition": { "required": 3 }}
+  }
+]
