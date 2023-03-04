@@ -1,11 +1,15 @@
 ## System Requirements
-* Ruby
+* Docker
 
-## How to check
- ``` ruby
-  irb -I .
+## How to run
+```
+docker build -t verbose-octo-bassoon .
+docker run -it verbose-octo-bassoon
+```
+
+## Working example
+```ruby
   require 'checkout'
-
   checkout = Checkout.new('data/prices.json', 'data/discounters.json')
   checkout.scan("VOUCHER")
   checkout.scan("VOUCHER")
@@ -33,9 +37,8 @@ end
 
 ## Running tests
 
-```ruby
-gem install rspec
-rspec
+```
+docker run -it verbose-octo-bassoon rspec
 ```
 
 ## Additional Questions for product owners
